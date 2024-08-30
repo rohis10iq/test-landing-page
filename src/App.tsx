@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react'
+
 import './App.css'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'

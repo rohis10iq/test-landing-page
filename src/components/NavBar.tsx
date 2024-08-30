@@ -1,4 +1,3 @@
-import React from "react";
 import { FaSearch, FaUser } from "react-icons/fa";
 
 function NavBar() {

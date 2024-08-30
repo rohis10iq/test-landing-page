@@ -1,8 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React from "react";
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Box from "./Box";
 import ImageBox from "./ImageBox";
 import ProgramImage from "./ProgramImage";

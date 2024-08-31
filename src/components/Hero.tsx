@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import Box from "./Box";
 import ImageBox from "./ImageBox";
 import ProgramImage from "./ProgramImage";
+import RectangleImage from "./RectangleImage";
 
 function Hero() {
   const [activeLink, setActiveLink] = useState("All");
@@ -217,34 +218,83 @@ function Hero() {
         </div>
         <div className="flex gap-4 justify-center w-full h-full text-white pb-24">
           <ImageBox
-            imageUrl="https://s3-alpha-sig.figma.com/img/f02f/165a/d8fb6fd4f2a022cfeeba87a37b73193f?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TvCnjydOH8DMryEfyv8IthlXOMkTXnLwCY1jzEEQjVqt1hJCgzsyW2C4XnM39QwEE1b9cEQTc7Rss8Gj1pu1esPROcevHajsrRjxzQW-dqyVk0603JDN9P8vxVI2RFVK8k6hlU2tiHdl69GGLEFq-nt2k8w7UY06Ds-ugVUbrF30DFlNcih7YjS0tXmZ7~weEI-dqhlKoqyh7AW4A4sNkSO0sVH4rQZSIy7JMBOE7R457waK5Aa17djW40tEuTJec-Puh0Gc1LkS15Uq7spHnNHxi58GWBSICgWnuBSd8UrdDD2T8NfqnkC7f4ES01X3iQs0fVVsierZOS7-5-I-VQ__"
-            title="Admission Application"
+            imageUrl="https://s3-alpha-sig.figma.com/img/0018/1877/ddc4916e2bb92a71bae6199950c56c92?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=djWBfUOPDm~ZmXPNGmQRtnCN88thV8gLTGSe9tFkOCcSJ~Ar6URqf9EkZHR2wcdRQTjMUQMB0uYZ~F6iauhqasiwpKuJWsF2aAS3u6TkJME5KJ5tp6L6U2Yvga3tQ8piU7gSjo2Rf9wcle8f~Nhtj6AoL8zxmwhZUiBhmxhhHNtMViGlOuAfvkBj6Y37o4K4Pr41soTTnYKogHLHJK1PaL-3Ws1Ft3TRF8o0ObYu1kfLjf8UmjmKVIhGgop6fdpILfpEPbxh267rqkBbRkoyrjxuGFRMZ2VeDMGAvHXF0-OnCdhnPuBn26ZTs9rKDl1vjvsPAINcPsQhnVOpQF1zmg__"
+            title="Institutions"
             description="Apply to any course and institution—university, college, or school. Find admission dates, schedules, fees, and more"
           />
           <ImageBox
-            imageUrl="https://s3-alpha-sig.figma.com/img/79a7/1877/4c7c15ff3347bf6560000ec4ff46ef90?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fjr3sWZdrZHVslYg05gtF0r4COYAa9iXgUEtDFjI7zpBbdjxTTkpolFEz~Rl67t~imblk~OoYMXvElNGe6tfiN6PV3mpqOvrmta4ZPE7HYJKwpGpNead7mFZghq1Jyl0ra7VkwNHuvPUljgY8ouAKaFm19O1AoTtbLGHH2iuc2hx7TTUicTj9GKUhOVpXIoBdlQ1M-~ZXc4OGHio50w6UYx5rp226~iOlzi8ZTuGoe6wwpT3lW7Fn5esAJSAP~zeVGbblpl-WeVC5Zz-ZM43Bmmy4nsT~3IMZZrR3lOvZSc28sBfkYvJIzIkfts9rPI~L4x405p2s0TQuPrEYsTKZg__"
-            title="Find Your City"
-            description="Choose your city for admission to the best universities, colleges, schools, and hostels."
+            imageUrl="https://s3-alpha-sig.figma.com/img/00b6/4189/e0e47be33f3f674b737b0304ee47df9b?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTGHK86wAsp3bxsnm6VA7YWhCppbtdrhvrQTAVB2afvmAl-gqCzoKM7FBmc8RACOwQNg4Y6foX-Qrp2cW31mDKIogkFejgmrOmPvR9YF~IdNfZHk9ktz4eSXiDpf8QrLqCNkijgpsx2~67Mp40rIImceeprE0NPoZJmpztzkWtyXVL7e3sxpXTmegma6W211BLgDTtwB7QncgeP2oY6GDv52bZ0mtiDyFGAtct5Lwux6qOhMN5-ShoH62EYNfZyt3I-wvm4rdr4ovt5LDxOfQyb5Aw5DwkN9O5JANFyyFdeu0cdN5QRMEIJ2lA8Gu9TK205G3sQsVRHuInLf9QRMdA__"
+            title="Jobs & Internships"
+            description="Be a partner for Jobs and Internships"
           />
           <ImageBox
-            imageUrl="https://s3-alpha-sig.figma.com/img/5088/15f6/fc7d7a22a819698eb0a1b23aedb34f7a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GTcbA~i04Vh7Vk8BlT7-VtXgyYoH2CGSVCJY~5EzNTDC6f21kEEjSKAj210AphIa3-pC5EjvUvVZ6y7wB3phB2OdLHwdjfMpmfTevWk4wCitR11qdiZe2D2B52OYOJ8N-ZXteTQ651jSatL~krehhLUmZI~ksj8HC4Z56bQn7pRyMAjBii4qLqXp3CnC16vw~5tJk2WzyU0Js0nQ4KbU8DT2Z9NBvtXfRtl28WZcFMWsfDnKReGzoXX9x8GUbIZ2fcTlvf4J1wRZlA4Iq66UIX0sijZQTEA-8xSRtT2FAq01FDHiCiI484QodYeSJMAhLoOq2AgJqJUcADeBo2O37Q__"
-            title="Scholarships"
-            description="Discover scholarships: merit-based, need-based, discounts, and loan assistance."
+            imageUrl="https://s3-alpha-sig.figma.com/img/8870/a837/b055d435a0549173bd9bee81579b1575?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jNbZH0U1IEnBjwd8XZDIZUZKvFYW4kVMQN7zLb7lei7gOlIV2Fo7UbGcwLcWkYrdDCqCq2PFo4cxPx23WLDD7f5~6YUMUKHJ3VBGkv39Fn6hFrQpNPmqW2b2xrBVe4AXkZUKHtKC-H7IWDYQllvOTyJcVN0Jhw0ZpMT8ZYm-GugLgkw8YAGnRLj6F8gdHqNE~qjRfyrtmLI~F47S8YBX1ZvCebKFNZ53~CYSqIu4AQ7LLm8sz0TryoBWsAdifgYQQTE1p-E0m1xnUacAif4KKn~v~bJq2AABJrW8LTfUBd1Q2lORF3oRabuEnG89HSoFTm3mHjcDQNhIWszNFPdm-A__"
+            title="Startups & Grants Opportunity"
+            description=""
           />
         </div>
-        <div className="w-[1341px] h-[140px]  gap-0 -md bg-[#27a07c] p-4  flex justify-between items-center">
+        <div className="w-[1341px] h-[140px] rounded-sm gap-0 -md bg-[#27a07c] p-4  flex justify-between items-center">
           <div>
             <h2 className="text-4xl font-bold text-white mb-1 drop-shadow-lg">
               Easy Steps for Admission
             </h2>
             <p className="text-white font-extrabold text-md drop-shadow-md">
               1. Choose Course and Institute 2. Submit Application 3. After
-              Confirmation Pay Online
-              {" "}
+              Confirmation Pay Online{" "}
               <button className="ml-2 text-[#2ecc53] font-bold hover:underline text-[32px] drop-shadow-xl">
                 "Apply Now"
               </button>
             </p>
+          </div>
+        </div>
+        <div className="flex self-start px-32 py-8">
+          <h1 className="text-4xl">
+            <span className="font-bold text-[#2EC89C]">Event</span>{" "}
+            <span className="font-medium text-black">and Open Days</span>
+          </h1>
+        </div>
+        <div className="flex justify-center space-x-4">
+          <RectangleImage
+            src="https://s3-alpha-sig.figma.com/img/4f67/b8bf/524eacc30e8d6d5063de412317852d7a?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jd2eenhOXDbFq~wwLUTo69aTxOe-iN0oMB4fpoz~RJn68v-hbmGlvdjQTE7jWVL-PKQY3dVSFZhONwdXsOwWjxys06-KFoBlFllwMecyV4dmcfj1Mep-kafM1JW-xxDWpRyqH-wwuzV5eHI30QQdfYtuUTIfcp3FjCFoMYoL94d9NrCw6V~wB5me-uNg8Olw1YMVwhDJwMoG0gRPYj3H9~gdQ5qUFMdiZkooOqq6kaiz5ibgAkR8InzOwDb7PRHgYn6TXb8cikL0VydEQXzUV9mcLpmqafWliBu9gkDPtJoEpLK-d-q0xr08Rod14A-1PMGUK-yr1OrIU59joCUk5g__"
+            description="In March 2023, CISCO BRAINS Institute Peshawar, in collaboration with Admissionsuc, held an event with the Chairman of HEC as the chief guest, along with the CISCO Country Director and the Rector of BRAINS."
+          />
+          <RectangleImage
+            src="https://s3-alpha-sig.figma.com/img/2c10/877c/b50dfe34c643438d7ccd44978b1afd08?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PTAjX5pL4EBWqZVl9AaE0Ps5KCeJaitoi~pp8Xmq80cOHfViY3mQDtWdNxDN1~vr9doeiwRq43pou06kWAxp1Qn8evFSAbIJOX9Dk5LC9hC4mIzPF8EYTHeV8fRuawvzA6ZVE6kzZ2o9gHq55sNniD4QRIGrujqQnJa5Ns5mannsMsZfXQ4Fe8pTWNZaAAuBrB85ZtNwrS-7gSsmFK9nGoDFB1yAtivzRGOIfYzkdHlw1ABQ~tYk3pjHB35g2~ZsBbDrw3P4r1V5CaW9NU-r91JJ2dQwk8AnQimjO~gVlz6yxIdfnojsKHPM0lEvLu2GIriCQuIGOqTF278I-XxyLw__"
+            description="In 2018-19, AUSC sent 70 students in the first round and 100 students in the second round on scholarships for MS programs to Sichuan University of Science and Technology in China."
+          />
+          <RectangleImage
+            src="https://s3-alpha-sig.figma.com/img/8870/a837/b055d435a0549173bd9bee81579b1575?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jNbZH0U1IEnBjwd8XZDIZUZKvFYW4kVMQN7zLb7lei7gOlIV2Fo7UbGcwLcWkYrdDCqCq2PFo4cxPx23WLDD7f5~6YUMUKHJ3VBGkv39Fn6hFrQpNPmqW2b2xrBVe4AXkZUKHtKC-H7IWDYQllvOTyJcVN0Jhw0ZpMT8ZYm-GugLgkw8YAGnRLj6F8gdHqNE~qjRfyrtmLI~F47S8YBX1ZvCebKFNZ53~CYSqIu4AQ7LLm8sz0TryoBWsAdifgYQQTE1p-E0m1xnUacAif4KKn~v~bJq2AABJrW8LTfUBd1Q2lORF3oRabuEnG89HSoFTm3mHjcDQNhIWszNFPdm-A__"
+            description="In May 2024, the Department of Management Sciences at COMSATS University Islamabad, Attock Campus, hosted an event for startups."
+          />
+        </div>
+        <div className="flex gap-4 p-8 justify-center ">
+          <div className="relative w-[1290px] h-[410px] rounded-[50px] shadow-xl shadow-black overflow-hidden">
+            <div
+              className="absolute inset-0"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-alpha-sig.figma.com/img/5f2c/1159/2b414d15879fd4e14238387e5c4b9d07?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dl7bViZ3sdZNr9bStjJ8qXGuCWTCH8ZxibKZNNEXbmkzANXWm-H3JJwhjnMC2YIOUlhIkwGQgtlZikuD~Dn2XdI5hQ2I-1SZOBI9wFjKIjoIivt0xaJwLyRdMxwTTSbtNa7bF1wTFT~Z3onS5B1X671zQiujmPxLz0JYcJImG0seGlQXeLaUuFTNAXs9uCyH0XFSdyYOjnIbh7mYxe6Ln1C363V64dod2CeYkK1zSNS06~C5AMCWeH7ESTH69S2rnllRTYSCpEyNSM25Ra-9iEgOstTyxKjwSi9YdDMhBO2PHltfFY097PM4uf756RbV8dCG2Toz5iliSvPN-ZYxJA__)`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+            <div className="absolute bottom-0 left-0 text-white font-bold text-6xl p-6">
+              <h1 className="py-2">Career Path</h1>
+              <h3 className="text-3xl">
+                Unlock Your Potential: Skills + Training = Career Success.
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#1D8C6E] flex justify-between text-white font-bold text-4xl w-[1341px] h-[149px] rounded-md items-center drop-shadow-md mb-16">
+          <div className="px-8 pb-0 space-y-4">
+            <h1>Live Chat</h1>
+            <h1>WhatsApp</h1>
+          </div>
+          <div className="relative px-8">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/741d/d9d7/ed352e016625ae5fa881e416b6d46a93?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=h2XVttgg6eLH42j4si--2JlpjKj4mmKUSLz8fmYlxo-DD5T4YRtJ8k1gZgJRqxdNCVwgy3uRSrkNGTywFwnPsdZ0BbjO0DzJgsGsFLYjaOARxsX-syzniwamMEQuLo97QKiXYSGDHH71Iq2eEyyWDNVDDHtx-wT4aTxU7M8CH-2JDRcQYr1wv0bT~hNDBOP6KOUeq-pk7za~vU~QUNfJn9k~N61AYfGZUJOG24CHkKNktZQyZeZtAFW32JpJBu~niL9AFZMjub~TJVMMvdHJ0hzwWu1Nl6gJQhjxjEMsxQJwk6Si57ulCNqwbLi9bIYlNFmisSTiuBbjFPlEKCpaWw__"
+              style={{ objectFit: "cover" }}
+            />
           </div>
         </div>
       </div>
